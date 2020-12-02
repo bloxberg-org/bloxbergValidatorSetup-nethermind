@@ -1,0 +1,33 @@
+{
+  "Init": {
+    "BaseDbPath": "/nethermind/nethermind_db/bloxberg",
+    "ChainSpecPath": "/nethermind/chainspec/bloxberg.json",
+    "EnableUnsecuredDevWallet": true,
+    "IsMining": true,
+    "LogDirectory": "/nethermind/logs",
+    "LogFileName": "validator-logs.txt",
+    "StaticNodesPath": "/nethermind/Data/static-nodes-bloxberg.json",
+    "StoreReceipts": true,
+    "WebSocketsEnabled": false
+  },
+  "Network": {
+    "ActivePeersMaxCount": 256,
+    "DiscoveryPort": 30303,
+    "P2PPort": 30303
+  },
+  "JsonRpc": {
+    "Enabled": true,
+    "EnabledModules": "all",
+    "Host": "127.0.0.1",
+    "Port": 8545,
+    "WebSocketsPort": 8546
+  },
+  "KeyStore": {
+    "KeyStoreDirectory": "/nethermind/keystore",
+    "PasswordFiles": ["/nethermind/validator.pwd"]
+  },
+  "Aura": {
+    "AllowAuRaPrivateChains": true,
+    "ForceSealing": true
+  }
+}

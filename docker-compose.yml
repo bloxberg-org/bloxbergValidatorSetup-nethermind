@@ -1,0 +1,28 @@
+version: "3.5"
+services:
+    validator:
+      container_name: bloxbergValidator-nethermind
+      build:
+        context: ./src
+        dockerfile: Dockerfile
+      entrypoint: /start.sh
+      # command: 
+      volumes:
+          - ./validator/bloxberg.json:/nethermind/chainspec/bloxberg.json
+          - ./validator/config.json:/nethermind/configs/bloxberg.cfg
+          - ./validator/static-nodes.json:/nethermind/Data/static-nodes-bloxberg.json
+          - ./validator/db/bloxberg:/nethermind/nethermind_db/bloxberg
+          - ./validator/keystore:/nethermind/keystore
+          - ./validator/logs:/nethermind/logs
+          - ./validator/validator.pwd:/nethermind/validator.pwd
+      ports:
+          - 8545:8545
+          - 8546:8546
+          - 30303:30303
+      user:
+        "0:0"
+      # Pass env vars into the container.
+      environment:
+        NAT_IP: ${NAT_IP}
+        PUBLIC_ADDRESS: ${PUBLIC_ADDRESS}
+      restart: unless-stopped

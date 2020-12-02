@@ -1,0 +1,5 @@
+/validator/db
+/validator/keystore
+/validator/logs
+.env
+/validator/validator.pwd
