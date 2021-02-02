@@ -26,3 +26,8 @@ services:
         NAT_IP: ${NAT_IP}
         PUBLIC_ADDRESS: ${PUBLIC_ADDRESS}
       restart: unless-stopped
+      networks:
+              - test
+networks:
+        test:
+                external: true
