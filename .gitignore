@@ -1,5 +1,7 @@
 /validator/db
-/validator/keystore
+# Ignore contents of keystore but keep the folder
+/validator/keystore/*
+!/validator/keystore/.gitkeep
 /validator/logs
 .env
 /validator/validator.pwd
