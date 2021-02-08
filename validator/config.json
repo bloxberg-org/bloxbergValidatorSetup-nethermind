@@ -2,7 +2,6 @@
   "Init": {
     "BaseDbPath": "/nethermind/nethermind_db/bloxberg",
     "ChainSpecPath": "/nethermind/chainspec/bloxberg.json",
-    "EnableUnsecuredDevWallet": true,
     "IsMining": true,
     "LogDirectory": "/nethermind/logs",
     "LogFileName": "validator-logs.txt",
