@@ -12,11 +12,24 @@
   "Network": {
     "ActivePeersMaxCount": 256,
     "DiscoveryPort": 30303,
-    "P2PPort": 30303
+    "P2PPort": 30303,
+    "StaticPeers": null,
+    "DiagTracerEnabled": false
   },
   "JsonRpc": {
     "Enabled": true,
-    "EnabledModules": "all",
+    "EnabledModules": [
+      "Eth",
+      "Subscribe",
+      "Trace",
+      "TxPool",
+      "Web3",
+      "Personal",
+      "Proof",
+      "Net",
+      "Parity",
+      "Health"
+    ],
     "Host": "127.0.0.1",
     "Port": 8545,
     "WebSocketsPort": 8546
@@ -28,5 +41,21 @@
   "Aura": {
     "AllowAuRaPrivateChains": true,
     "ForceSealing": true
+  },
+  "Sync": {
+    "SynchronizationEnabled": true,
+    "FastSync": true,
+    "BeamSync": false,
+    "FastBlocks": false,
+    "DownloadHeadersInFastSync": true,
+    "DownloadBodiesInFastSync": true,
+    "DownloadReceiptsInFastSync": true,
+    "UseGethLimitsInFastBlocks": false
+  },
+  "EthStats": {
+    "Enabled": false,
+    "Name": "test_node_name",
+    "Secret": "test",
+    "Server": "wss://0.0.0.0:3000/api"
   }
 }
