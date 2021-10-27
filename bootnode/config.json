@@ -2,9 +2,7 @@
   "Init": {
     "BaseDbPath": "/nethermind/nethermind_db/bloxberg",
     "ChainSpecPath": "/nethermind/chainspec/bloxberg.json",
-    "IsMining": true,
-    "LogDirectory": "/nethermind/logs",
-    "LogFileName": "validator-logs.txt",
+    "IsMining": false,
     "StaticNodesPath": "/nethermind/Data/static-nodes-bloxberg.json",
     "StoreReceipts": true,
     "WebSocketsEnabled": false
@@ -33,10 +31,6 @@
     "Host": "127.0.0.1",
     "Port": 8545,
     "WebSocketsPort": 8546
-  },
-  "KeyStore": {
-    "KeyStoreDirectory": "/nethermind/keystore",
-    "PasswordFiles": ["/nethermind/validator.pwd"]
   },
   "Aura": {
     "AllowAuRaPrivateChains": true,

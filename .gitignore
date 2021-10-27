@@ -1,7 +1,7 @@
-/validator/db
+/bootnode/db
 # Ignore contents of keystore but keep the folder
-/validator/keystore/*
-!/validator/keystore/.gitkeep
-/validator/logs
+/bootnode/keystore/*
+!/bootnode/keystore/.gitkeep
+/bootnode/logs
 .env
-/validator/validator.pwd
+/bootnode/bootnode.pwd
