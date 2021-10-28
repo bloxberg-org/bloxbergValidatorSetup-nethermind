@@ -1,6 +1,6 @@
 version: "3.5"
 services:
-  validator:
+  bootnode:
     container_name: bloxbergNethermindBootnode
     build:
       context: ./src
@@ -11,6 +11,7 @@ services:
       - ./bootnode/bloxberg.json:/nethermind/chainspec/bloxberg.json
       - ./bootnode/config.json:/nethermind/configs/bloxberg.cfg
       - ./bootnode/static-nodes.json:/nethermind/Data/static-nodes-bloxberg.json
+      - ./bootnode/keystore:/nethermind/keystore
       - ./bootnode/db/bloxberg:/nethermind/nethermind_db/bloxberg
       - ./bootnode/bootnode.pwd:/nethermind/bootnode.pwd
     ports:

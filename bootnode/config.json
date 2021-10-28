@@ -32,6 +32,10 @@
     "Port": 8545,
     "WebSocketsPort": 8546
   },
+  "KeyStore": {
+    "KeyStoreDirectory": "/nethermind/keystore",
+    "PasswordFiles": ["/nethermind/bootnode.pwd"]
+  },
   "Aura": {
     "AllowAuRaPrivateChains": true,
     "ForceSealing": true
