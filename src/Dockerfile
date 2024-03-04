@@ -1,4 +1,4 @@
-FROM nethermind/nethermind:latest
+FROM nethermindeth/nethermind:1.13.2-test-deb
 USER root
 
 ADD start.sh /
